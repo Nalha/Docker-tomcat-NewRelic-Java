@@ -2,13 +2,13 @@
 
 ![New Relic & Docker](https://cms-assets.tutsplus.com/uploads/users/343/posts/24891/preview_image/docker_newrelic3.png)
 
-Use this repository to get New Relic Java Agent integrated with a container built with [google jib](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
+Use this repository to get New Relic Java Agent integrated with a container built with google jib.
 
-NOTE: This is a simple tutorial that entails a Dockerfile and a docker run command to bake New Relic Java Agent into the latest Tomcat (8.0) container.
+NOTE: This is a simple tutorial that entails a Dockerfile and a docker run command to bake New Relic Java Agent into the google jib plugin.
 
 You will require the following two things to get started:
 1. You will need an official license from New Relic SaaS UI: rpm.newrelic.com/accounts/xxxxxx (If you don't have a New Relic Account, sign up for a trial on [New Relic Sign Up Page!](https://newrelic.com/signup) 
-2. Use the official Tomcat docker image - [Docker Hub tomcat!](https://hub.docker.com/_/tomcat/)
+2. Use the official google jib plugin - [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
 
 Once you have the above two sorted, you can proceed with the following:
 
@@ -22,7 +22,7 @@ Once you have the above two sorted, you can proceed with the following:
 <plugin>
     <groupId>com.google.cloud.tools</groupId>
     <artifactId>jib-maven-plugin</artifactId>
-    <version>0.10.0</version>
+    <version>0.10.0</version><!-- Don't forget to check for newer version -->
     <configuration>
         <to>
             <image>${project.artifactId}</image>
